@@ -5,7 +5,8 @@
     .module('weatherApp', ['ngRoute'])
     .config(function($routeProvider, $locationProvider) {
       $routeProvider.when('/', {
-        templateUrl: ''
+        templateUrl: './weather-display/weather.html',
+        controller: 'WeatherController'
       })
     })
 
