@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app='weatherApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Weather App</title>
+
+    <link rel="stylesheet" href="./css/main.css" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"  crossorigin="anonymous"></script>
+
+    <base href='/'>
+  </head>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='row'>
+        <h1 class='text-center col-md-6 col-md-offset-3'>Weather App!</h1>
+      </div>
+    </div>
+
+    <div ng-view>
+    </div>
+
+
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
