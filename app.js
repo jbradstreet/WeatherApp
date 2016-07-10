@@ -2,6 +2,11 @@
   'use strict';
 
   angular
-    .module('weatherApp', []);
+    .module('weatherApp', ['ngRoute'])
+    .config(function($routeProvider, $locationProvider) {
+      $routeProvider.when('/', {
+        templateUrl: ''
+      })
+    })
 
 });
