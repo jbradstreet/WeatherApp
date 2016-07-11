@@ -8,12 +8,14 @@
     // weatherService is the name of my factory-service
     function WeatherController($scope, weatherService) {
       $scope.vm = {};
+      $scope.vm.message = "Hello!";
 
-      weatherService.getData().then(function(data) {
-        $scope.vm.weatherData = data;
-      })
-
-
+      var example = weatherService.getData();
+      $scope.vm.data = example;
+      console.log($scope);
+      // .then(function(data) {
+      //   $scope.vm.data = data;
+      // })
     }
 
 })();
