@@ -13,7 +13,7 @@
       return {
         getData: function() {
           var deferred = $q.defer();
-          $http.jsonp('https://api.forecast.io/forecast/a379801180042a5b59fa3c0034b64131/47.6062,122.3321' + "?callback=JSON_CALLBACK")
+          $http.jsonp('https://api.forecast.io/forecast/a379801180042a5b59fa3c0034b64131/47.6062,-122.3321' + "?callback=JSON_CALLBACK")
           .success(function(result) {
             deferred.resolve(result);
             console.log(result);

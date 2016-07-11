@@ -12,8 +12,8 @@
 
       var example = weatherService.getData();
       $scope.vm.data = example;
-      console.log($scope);
-      // removed ".then", not utilizing a promise in my service file.
+      console.log($scope.vm.data);
+      // removed ".then", not utilizing a promise in
       // .then(function(data) {
       //   $scope.vm.data = data;
       // })
