@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('weatherApp');
+    .module('weatherApp')
     .controller('WeatherController', WeatherController)
 
     // weatherService is the name of my factory-service

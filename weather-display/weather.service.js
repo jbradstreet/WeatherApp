@@ -18,10 +18,10 @@
             console.log(data);
             return data;
           })
-        } else {
-          return $q(function(resolve, reject) {
-            resolve(data);
-          });
+        // } else {
+        //   return $q(function(resolve, reject) {
+        //     resolve(data);
+        //   });
         }
       }
 
