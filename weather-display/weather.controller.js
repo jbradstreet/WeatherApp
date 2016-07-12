@@ -8,13 +8,10 @@
     // weatherService is the name of my factory-service
     function WeatherController(weatherService) {
       var vm = this;
-      vm.message = "Hello!";
 
        weatherService.getData().then(function(data) {
         vm.data = data;
         console.log(data);
-
       });
     }
-
 })();
