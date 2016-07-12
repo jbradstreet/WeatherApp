@@ -27,9 +27,3 @@
         }
       }
 })();
-
-
-// } else {
-//   return $q(function(resolve, reject) {
-//     resolve(data);
-//   });
