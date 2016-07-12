@@ -29,8 +29,8 @@
 <h3>Next 4 days</h3>
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-2 col-md-offset-1 well text-center cardSpacing">
+  <div class="row row-eq-height">
+    <div class="col-md-3 well text-center cardSpacing">
       <h4>Next Day, Day 2</h4>
       <p>
         Date: {{vm.data.$$state.value.daily.data[1].time * 1000 | date:'MM-dd-yyyy' }}
@@ -48,7 +48,7 @@
       </p>
     </div>
 
-    <div class="col-md-2 well text-center cardSpacing">
+    <div class="col-md-3 well text-center cardSpacing">
       <h4>Day 3</h4>
       <p>
         Date: {{vm.data.$$state.value.daily.data[2].time * 1000 | date:'MM-dd-yyyy' }}
@@ -66,7 +66,7 @@
       </p>
     </div>
 
-    <div class="col-md-2 well text-center cardSpacing">
+    <div class="col-md-3 well text-center cardSpacing">
       <h4>Day 4</h4>
       <p>
         Date: {{vm.data.$$state.value.daily.data[3].time * 1000 | date:'MM-dd-yyyy' }}
@@ -84,7 +84,7 @@
       </p>
     </div>
 
-    <div class="col-md-2 well text-center cardSpacing">
+    <div class="col-md-3 well text-center cardSpacing">
       <h4>Day 5</h4>
       <p>
         Date: {{vm.data.$$state.value.daily.data[4].time * 1000 | date:'MM-dd-yyyy' }}

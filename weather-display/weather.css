@@ -2,16 +2,13 @@
   padding: 0px 10px;
 }
 
-/*.mainIconCenter {
-  display: flex;
-  align-items: center;
-  margin-left: 70px;
+.cardSpacing {
+  margin-right: 2%;
 }
 
-.iconCenter {
-  margin-left: 35px;
-}*/
-
-.cardSpacing {
-  margin-right: 4%;
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
