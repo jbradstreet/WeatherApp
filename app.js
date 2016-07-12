@@ -6,7 +6,8 @@
     .config(function($routeProvider, $locationProvider) {
       $routeProvider.when('/', {
         templateUrl: '../weather-display/weather.html',
-        controller: 'WeatherController'
+        controller: 'WeatherController',
+        controllerAs: 'vm'
       })
     })
 
