@@ -5,7 +5,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4 col-md-offset-4 well text-center">
-      <h3>Current day</h3>
+      <h3 class="title">Current day</h3>
       <p>
         Date: {{vm.data.$$state.value.currently.time * 1000 | date:'MM-dd-yyyy' }}
       </p>
@@ -31,7 +31,7 @@
 <div class="container">
   <div class="row row-eq-height">
     <div class="col-md-3 well text-center cardSpacing">
-      <h4>Next Day, Day 2</h4>
+      <h4 class="title">Day 2</h4>
       <p>
         Date: {{vm.data.$$state.value.daily.data[1].time * 1000 | date:'MM-dd-yyyy' }}
       </p>
@@ -49,7 +49,7 @@
     </div>
 
     <div class="col-md-3 well text-center cardSpacing">
-      <h4>Day 3</h4>
+      <h4 class="title">Day 3</h4>
       <p>
         Date: {{vm.data.$$state.value.daily.data[2].time * 1000 | date:'MM-dd-yyyy' }}
       </p>
@@ -67,7 +67,7 @@
     </div>
 
     <div class="col-md-3 well text-center cardSpacing">
-      <h4>Day 4</h4>
+      <h4 class="title">Day 4</h4>
       <p>
         Date: {{vm.data.$$state.value.daily.data[3].time * 1000 | date:'MM-dd-yyyy' }}
       </p>
@@ -85,7 +85,7 @@
     </div>
 
     <div class="col-md-3 well text-center cardSpacing">
-      <h4>Day 5</h4>
+      <h4 class="title">Day 5</h4>
       <p>
         Date: {{vm.data.$$state.value.daily.data[4].time * 1000 | date:'MM-dd-yyyy' }}
       </p>
