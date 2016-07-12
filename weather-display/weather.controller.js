@@ -11,12 +11,17 @@
       $scope.vm.message = "Hello!";
 
       var example = weatherService.getData();
-      $scope.vm.data = example;
-      console.log($scope.vm.data);
-      // removed ".then", not utilizing a promise in
-      // .then(function(data) {
-      //   $scope.vm.data = data;
-      // })
+        $scope.vm.data = example;
+        console.log($scope.vm.data);
+
+
+      $scope.vm.weatherIcon = {
+        forecast: {
+          icon: "snow",
+          iconSize: 50,
+          color: "blue"
+        }
+      };
     }
 
 })();
