@@ -1,24 +1,23 @@
 <!-- set up separate view in case I have time to build search by city feature -->
 <h2>weather view</h2>
 
-<!-- target values I went, simple text render. -->
+<!-- target values I want, simple text render. -->
 <div class="container">
   <div class="row">
-    <div class="col-md-4 col-md-offset-4 well">
-      <h3 class="text-center">Current day</h3>
-      <p class="text-center">
+    <div class="col-md-4 col-md-offset-4 well text-center">
+      <h3>Current day</h3>
+      <p>
         Date: {{vm.data.$$state.value.currently.time * 1000 | date:'MM-dd-yyyy' }}
       </p>
       <skycon icon="vm.data.$$state.value.currently.icon"
-              class="mainIconCenter"
               size="75"></skycon>
-      <p class="text-center">
+      <p>
          {{ vm.data.$$state.value.currently.summary }}
       </p>
-      <p class="text-center">
+      <p>
         Feels LIke: {{ vm.data.$$state.value.currently.apparentTemperature }}
       </p>
-      <p class="text-center">
+      <p>
         Current Temperature: {{ vm.data.$$state.value.currently.temperature }}
       </p>
     </div>
@@ -31,7 +30,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-3 well">
+    <div class="col-md-3 well text-center">
       <h4 >Next Day, Day 2</h4>
       <p>
         Date: {{vm.data.$$state.value.daily.data[1].time * 1000 | date:'MM-dd-yyyy' }}
@@ -49,7 +48,7 @@
       </p>
     </div>
 
-    <div class="col-md-3 well">
+    <div class="col-md-3 well text-center">
       <h4>Day 3</h4>
       <p>
         Date: {{vm.data.$$state.value.daily.data[2].time * 1000 | date:'MM-dd-yyyy' }}
@@ -67,7 +66,7 @@
       </p>
     </div>
 
-    <div class="col-md-3 well">
+    <div class="col-md-3 well text-center">
       <h4>Day 4</h4>
       <p>
         Date: {{vm.data.$$state.value.daily.data[3].time * 1000 | date:'MM-dd-yyyy' }}
@@ -85,7 +84,7 @@
       </p>
     </div>
 
-    <div class="col-md-3 well">
+    <div class="col-md-3 well text-center">
       <h4>Day 5</h4>
       <p>
         Date: {{vm.data.$$state.value.daily.data[4].time * 1000 | date:'MM-dd-yyyy' }}
