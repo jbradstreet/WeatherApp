@@ -1,4 +1,50 @@
 <h2>weather view</h2>
 
-{{ weatherData }}
 {{ vm.message }}
+{{ vm.data.$$state.value.currently }}
+
+<!-- target values I went, simple text render. -->
+<h3>Current data</h3>
+<p>
+  Include icon above summary...later.
+  Icon: {{ vm.data.$$state.value.daily.data[0].icon }}
+</p>
+<p>
+  Date: {{vm.data.$$state.value.daily.data[0].time }}
+</p>
+<p>
+  Summary: {{ vm.data.$$state.value.daily.data[0].summary }}
+</p>
+<p>
+  Current Max Temperature: {{ vm.data.$$state.value.daily.data[0].temperatureMax }}
+</p>
+<p>
+  Current Min Temperature: {{ vm.data.$$state.value.daily.data[0].temperatureMin }}
+</p>
+<hr />
+
+<h3>Next 3 days</h3>
+<div>
+  <h4>Next Day, Day 1</h4>
+  <p>
+    {{ vm.data.$$state.value.daily.data[1] }}
+  </p>
+</div>
+<div>
+  <h4>Day 2</h4>
+  <p>
+    {{ vm.data.$$state.value.daily.data[2] }}
+  </p>
+</div>
+<div>
+  <h4>Day 3</h4>
+  <p>
+    {{ vm.data.$$state.value.daily.data[3] }}
+  </p>
+</div>
+<div>
+  <h4>Day 4</h4>
+  <p>
+    {{ vm.data.$$state.value.daily.data[4] }}
+  </p>
+</div>
