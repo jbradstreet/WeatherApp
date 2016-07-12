@@ -4,11 +4,18 @@
 {{ vm.data.$$state.value.currently }}
 
 <!-- target values I went, simple text render. -->
-<h3>Current data</h3>
-<p>
-  Include icon above summary...later.
-  Icon: {{ vm.data.$$state.value.daily.data[0].icon }}
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 well">
+      <h3>Current data</h3>
+      <p>
+        Include icon above summary...later.
+        Icon: {{ vm.data.$$state.value.daily.data[0].icon }}
+      </p>
+    </div>
+  </div>  
+</div>
+
 <p>
   Date: {{vm.data.$$state.value.daily.data[0].time }}
 </p>
@@ -22,6 +29,8 @@
   Current Min Temperature: {{ vm.data.$$state.value.daily.data[0].temperatureMin }}
 </p>
 <hr />
+
+
 
 <h3>Next 3 days</h3>
 <div>
