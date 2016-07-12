@@ -10,20 +10,21 @@
       <h3 class="text-center">Current day</h3>
       <canvas id="snow" width="128" height="128"></canvas>
       <p>
-        Date: {{vm.data.$$state.value.daily.data[0].time * 1000 | date:'MM-dd-yyyy' }}
+        Date: {{vm.data.$$state.value.currently.time * 1000 | date:'MM-dd-yyyy' }}
       </p>
-      <skycon icon="vm.weatherIcon.forecast.icon" size="vm.weatherIcon.forecast.iconSize"></skycon>
+      <skycon icon="vm.weatherIcon.forecast.icon"
+              size="vm.weatherIcon.forecast.iconSize"></skycon>
       <p>
-        Icon: {{ vm.data.$$state.value.daily.data[0].icon }}
-      </p>
-      <p>
-        Summary: {{ vm.data.$$state.value.daily.data[0].summary }}
+        Icon: {{ vm.data.$$state.value.currently.icon }}
       </p>
       <p>
-        Current Max Temperature: {{ vm.data.$$state.value.daily.data[0].temperatureMax }}
+        Summary: {{ vm.data.$$state.value.currently.summary }}
       </p>
       <p>
-        Current Min Temperature: {{ vm.data.$$state.value.daily.data[0].temperatureMin }}
+        Feels LIke: {{ vm.data.$$state.value.currently.apparentTemperature }}
+      </p>
+      <p>
+        Current Temperature: {{ vm.data.$$state.value.currently.temperature }}
       </p>
     </div>
   </div>
