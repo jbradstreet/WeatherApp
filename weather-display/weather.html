@@ -9,7 +9,7 @@
     <div class="col-md-4 col-md-offset-4 well">
       <h3 class="text-center">Current day</h3>
       <p>
-        Date: {{vm.data.$$state.value.daily.data[0].time }}
+        Date: {{vm.data.$$state.value.daily.data[0].time * 1000 | date:'MM-dd-yyyy' }}
       </p>
       <p>
         Icon: {{ vm.data.$$state.value.daily.data[0].icon }}
@@ -34,9 +34,9 @@
 <div class="container">
   <div class="row">
     <div class="col-md-3 well">
-      <h4>Next Day, Day 2</h4>
+      <h4 >Next Day, Day 2</h4>
       <p>
-        Date: {{vm.data.$$state.value.daily.data[1].time }}
+        Date: {{vm.data.$$state.value.daily.data[1].time * 1000 | date:'MM-dd-yyyy' }}
       </p>
       <p>
         Icon: {{ vm.data.$$state.value.daily.data[1].icon }}
@@ -55,7 +55,7 @@
     <div class="col-md-3 well">
       <h4>Day 3</h4>
       <p>
-        Date: {{vm.data.$$state.value.daily.data[2].time }}
+        Date: {{vm.data.$$state.value.daily.data[2].time * 1000 | date:'MM-dd-yyyy' }}
       </p>
       <p>
         Icon: {{ vm.data.$$state.value.daily.data[2].icon }}
@@ -74,7 +74,7 @@
     <div class="col-md-3 well">
       <h4>Day 4</h4>
       <p>
-        Date: {{vm.data.$$state.value.daily.data[3].time }}
+        Date: {{vm.data.$$state.value.daily.data[3].time * 1000 | date:'MM-dd-yyyy' }}
       </p>
       <p>
         Icon: {{ vm.data.$$state.value.daily.data[3].icon }}
@@ -93,7 +93,7 @@
     <div class="col-md-3 well">
       <h4>Day 5</h4>
       <p>
-        Date: {{vm.data.$$state.value.daily.data[4].time }}
+        Date: {{vm.data.$$state.value.daily.data[4].time * 1000 | date:'MM-dd-yyyy' }}
       </p>
       <p>
         Icon: {{ vm.data.$$state.value.daily.data[4].icon }}
