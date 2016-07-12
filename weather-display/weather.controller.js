@@ -10,18 +10,21 @@
       $scope.vm = {};
       $scope.vm.message = "Hello!";
 
-      var example = weatherService.getData();
-        $scope.vm.data = example;
-        console.log($scope.vm.data);
+      var data = weatherService.getData();
+        $scope.vm.data = data;
+        console.log(data);
 
 
-      $scope.vm.weatherIcon = {
-        forecast: {
-          icon: "snow",
-          iconSize: 50,
-          color: "blue"
-        }
-      };
+      // $scope.vm.weatherIcon = {
+      //   access weatherService data
+      //   if ($scope.vm.data.$$state.value.daily[0].icon)
+      //   forecast: {
+      //     icon: "rain",
+      //     iconSize: 50,
+      //     color: "blue"
+      //   }
+      //   console.log($scope.vm.data);
+      // };
     }
 
 })();

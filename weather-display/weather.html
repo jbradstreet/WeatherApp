@@ -12,7 +12,7 @@
       <p>
         Date: {{vm.data.$$state.value.currently.time * 1000 | date:'MM-dd-yyyy' }}
       </p>
-      <skycon icon="vm.weatherIcon.forecast.icon"
+      <skycon icon="vm.data.$$state.value.currently.icon"
               size="vm.weatherIcon.forecast.iconSize"></skycon>
       <p>
         Icon: {{ vm.data.$$state.value.currently.icon }}
