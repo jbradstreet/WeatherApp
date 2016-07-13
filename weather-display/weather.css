@@ -16,10 +16,31 @@
 .title {
   font-family: 'Ovo', serif;
   letter-spacing: 2px;
-  font-size: 40px;
+  font-size: 25px;
 }
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alignBottom {
+  align-self: flex-end;
+}
+
 
 p {
   font-family: 'Muli', sans-serif;
   font-size: 15px;
+}
+
+.highTemp {
+  color: #E20018;
+  font-weight: bold;
+}
+
+.lowTemp {
+  color: #4393b9;
+  font-weight: bold;
 }
