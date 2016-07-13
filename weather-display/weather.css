@@ -20,15 +20,15 @@
 }
 
 .aligner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 
 .alignBottom {
-  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  right: 25%;
 }
-
 
 p {
   font-family: 'Muli', sans-serif;
