@@ -34,6 +34,7 @@
 p {
   font-family: 'Muli', sans-serif;
   font-size: 15px;
+  font-weight: bold;
 }
 
 .highTemp {

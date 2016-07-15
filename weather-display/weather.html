@@ -13,11 +13,8 @@
       <p>
          {{ vm.data.currently.summary }}
       </p>
-      <p>
-        Feels LIke: {{ vm.data.currently.apparentTemperature }} °F
-      </p>
-      <p>
-        Current Temperature: {{ vm.data.currently.temperature }} °F
+      <p class="highTemp">
+        {{ vm.data.currently.temperature | number:0 }} °F
       </p>
     </div>
   </div>
@@ -41,10 +38,10 @@
 
       <div class="text-center alignBottom">
         <p class="highTemp">
-          {{ daily.temperatureMax }} °F
+          {{ daily.temperatureMax | number:0 }} °F
         </p>
         <p class="lowTemp">
-          {{ daily.temperatureMin }} °F
+          {{ daily.temperatureMin | number:0 }} °F
         </p>
       </div>
 
