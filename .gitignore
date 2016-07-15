@@ -1,1 +1,3 @@
 .env
+
+API Key was placed in hidden file for when I build out a server side to hide the key. Not super-important right now, but in the future it is good practice. The pieces are in place for implementation. 
