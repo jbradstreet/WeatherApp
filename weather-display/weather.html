@@ -1,28 +1,20 @@
 <!-- set up separate view in case I want to add more to this later -->
 
-<div class="container topSection" id="banner">
-  <div>
-    <!-- would prefer div on next line to be col-md-3, but centering was tricky.  -->
+<div class="container topSection"
+     id="banner">
+  <div class="row">
     <div class="col-md-4 col-md-offset-4 well text-center"
          id="mainCard">
-
-      <div id="allMainCard">
-        <h3 class="title">Today is...</h3>
-        <h4 class="title">{{vm.data.currently.time * 1000 | date:'EEEE' }}</h4>
-        <p>
-          {{vm.data.currently.time * 1000 | date:'MM-dd-yyyy' }}
-        </p>
-        <skycon icon="vm.data.currently.icon"
-        size="75"></skycon>
-        <p>
-          {{ vm.data.currently.summary }}
-        </p>
-        <p class="highTemp">
-          {{ vm.data.currently.temperature | number:0 }} °F
-        </p>
+      <div id="allTopCard">
+        <!-- <h3 class="title">Today is</h3> -->
+        <h4 class="title">Today is {{vm.data.currently.time * 1000 | date:'EEEE' }}! </h4>
+          <p> {{vm.data.currently.time * 1000 | date:'MM-dd-yyyy' }} </p>
+          <skycon icon="vm.data.currently.icon"
+                  size="75"></skycon>
+          <p> {{ vm.data.currently.summary }} </p>
+          <p class="highTemp">
+            {{ vm.data.currently.temperature | number:0 }} °F </p>
       </div>
-
-
     </div>
   </div>
 </div><br /><br />
@@ -31,7 +23,7 @@
 
 <div class="container">
   <div class="row row-eq-height">
-    <div class="col-md-2 well text-center cardSpacing"
+    <div class="col-md-2 well text-center cardSpacing img-responsive"
          id="bottomCards"
          ng-repeat="daily in vm.data.daily.data.slice(1,5)">
       <h4 class="title">{{daily.time * 1000 | date:'EEEE' }}</h4>
@@ -40,7 +32,7 @@
       </p>
       <skycon icon="daily.icon"
               size="75"></skycon>
-      <p class="aligner">
+      <p>
         {{ daily.summary }}
       </p><br /><br /><br />
 
