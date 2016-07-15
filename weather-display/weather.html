@@ -2,20 +2,25 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-4 col-md-offset-4 well text-center">
-      <h3 class="title">Today is...</h3>
-      <h4 class="title">{{vm.data.currently.time * 1000 | date:'EEEE' }}</h4>
-      <p>
-        {{vm.data.currently.time * 1000 | date:'MM-dd-yyyy' }}
-      </p>
-      <skycon icon="vm.data.currently.icon"
-              size="75"></skycon>
-      <p>
-         {{ vm.data.currently.summary }}
-      </p>
-      <p class="highTemp">
-        {{ vm.data.currently.temperature | number:0 }} °F
-      </p>
+    <div class="col-md-4 col-md-offset-4 well text-center mainCard">
+
+      <div id="allMainCard">
+        <h3 class="title">Today is...</h3>
+        <h4 class="title">{{vm.data.currently.time * 1000 | date:'EEEE' }}</h4>
+        <p>
+          {{vm.data.currently.time * 1000 | date:'MM-dd-yyyy' }}
+        </p>
+        <skycon icon="vm.data.currently.icon"
+        size="75"></skycon>
+        <p>
+          {{ vm.data.currently.summary }}
+        </p>
+        <p class="highTemp">
+          {{ vm.data.currently.temperature | number:0 }} °F
+        </p>
+      </div>
+
+
     </div>
   </div>
 </div>
