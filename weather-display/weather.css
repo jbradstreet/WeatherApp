@@ -14,8 +14,9 @@
   display: flex;
 }
 
-.mainCard {
+#mainCard {
   margin-top: 40px;
+  box-shadow: -9px 9px 8px #888888;
 }
 
 #allMainCard .title {
