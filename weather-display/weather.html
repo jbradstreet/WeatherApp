@@ -19,8 +19,8 @@
 </div><br /><br />
 
 <div class="container">
-  <div class="row row-eq-height">
-    <div class="col-md-2 well"
+  <div class="row">
+    <div class="col-md-2 col-md-offset-4 col-sm-4 col-xs-4 well"
          id="bottomCards"
          ng-repeat="daily in vm.data.daily.data.slice(1,5)">
       <h4 class="title">{{daily.time * 1000 | date:'EEEE' }}</h4>
@@ -29,7 +29,7 @@
               size="75"></skycon>
       <p> {{ daily.summary }} </p><br /><br /><br />
 
-      <div class="text-center alignBottom">
+      <div class="text-center alignBottomText">
         <p class="highTemp">
           {{ daily.temperatureMax | number:0 }} °F
         </p>
