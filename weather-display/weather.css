@@ -54,6 +54,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   padding-bottom: 40px;
 }
 
