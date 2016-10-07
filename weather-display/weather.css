@@ -48,7 +48,6 @@
 }
 
 /* ids and classes for Bottom Cards */
-/* curently removed from line 22 */
 .row-eq-height {
   display: -webkit-box;
   display: -webkit-flex;
@@ -60,8 +59,6 @@
 
 #bottomCards {
   box-shadow: -9px 9px 8px #3c383d;
-  /*width: 196px;*/
-  /*max-width: 300px;*/
   margin: 15px;
   text-align: center;
 }
